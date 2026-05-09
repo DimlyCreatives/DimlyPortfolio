@@ -270,6 +270,12 @@ h1 {
     .section2 .about-us-icon {
         display: none;
     }
+    .section2 h2 {
+        font-size: 3rem;
+    }
+    .section2 .content {
+        font-size: 1rem;
+    }
 }
 
 /* SERVICES */
