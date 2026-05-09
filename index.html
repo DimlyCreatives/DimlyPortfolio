@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/DimlyIcon.webp">
+
+    <title>Dimly Dimly Studios</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <img src="assets/DimlyIcon.webp" alt="" class="logo">
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="pages/services.html">What We Offer</a>
+            <a href="pages/blog_posts.html">Blog Posts</a>
+            <a href="pages/contact_us.html">Contact Us</a>
+        </div>
+        <i class="bi bi-list" id="menu-button" onclick="showDropdown()"></i>
+    </div>
+    <div class="nav-dropdown" id="nav-dropdown">
+        <a href="#home">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="pages/services.html">What We Offer</a>
+        <a href="pages/blog_posts.html">Blog Posts</a>
+        <a href="pages/contact_us.html">Contact Us</a>
+    </div>
+    <section class="section1" id="home">
+        <div class="title">
+            <img src="assets/DimlyTitle.png" class="homeTitle" alt="">
+            <h3>Where subtle design shines</h3>
+        </div>
+    </section>
+    <section class="section2" id="about-us">
+        <div class="title-div">
+            <img src="assets/Section2TitleIcon.webp" alt="">
+            <h2>ABOUT US</h2>
+        </div>
+        <p class="content">We are a small development team specializing in responsive static websites, custom web systems, and mobile applications. From modern websites to full platforms built with Flask and .NET MAUI, we create reliable solutions tailored to real-world needs.</p>
+        <img src="assets/Section2Shelf.webp" alt="" class="decor">
+    </section>
+    <section class="footer">
+        <div class="line"></div>
+        <h3>Dimly Dimly Studios</h3>
+        <div class="links">
+            <a href="https://www.facebook.com/dimlycreatives"><img src="assets/Facebook.webp" alt="">DIMLY DIMLY Studios</a>
+            <div class="link-line"></div>
+            <a href="#home">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="pages/services.html">What We Offer</a>
+            <a href="pages/blog_posts.html">Blog Posts</a>
+            <a href="pages/contact_us.html">Contact Us</a>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
