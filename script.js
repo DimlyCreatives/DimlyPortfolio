@@ -13,7 +13,7 @@ if (slider && cards.length) {
 }
 
 document.getElementById("dimly-email").addEventListener("click", () => {
-    const text = "DimlyDimlyStudios@gmail.com";
+    const text = "dimlycreatives@gmail.com";
     navigator.clipboard.writeText(text)
         .then(() => alert("Email copied to your clipboard: " + text))
         .catch(err => console.error("Copy failed:", err));
