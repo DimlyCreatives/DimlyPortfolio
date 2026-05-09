@@ -148,12 +148,15 @@ h1 {
 
 .section1 .lamp {
 	position: absolute;
-	right: 0;
-	top: 55%;
-	transform: translateY(-50%);
-	width: 95%;
+	left: 51%;
+    bottom: 0;
+    transform: translateX(-50%);
+	aspect-ratio: 914/1487;	
+	height: 1487;
+	width: auto;
+    max-width: 100vw;
+    min-height: 100vh;
 	margin-top: 0%;
-	margin-right: -13%;
 }
 
 .section1 .bg {
@@ -180,14 +183,19 @@ h1 {
 	gap: 20px;
 	align-items: center;
 	justify-content: center;
+    width: 80%;
 }
 
 .section1 h1, .section1 h3 {
+    text-align: center;
 	margin: 0px;
+    line-height: 1.5;
 }
 
 .section1 .homeTitle {
-    height: 10rem;
+    max-height: 10rem;
+    height: auto;
+    max-width: 100%;
 }
 
 /* SECTION 2 */
@@ -200,7 +208,7 @@ h1 {
     grid-template-areas: 
         "title title"
         "content-area decor";
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: auto 1fr;
     grid-template-columns: 3fr 2fr;
 	align-items: center;
 	justify-content: center;
@@ -212,7 +220,6 @@ h1 {
 .section2 .title-div {
     grid-area: title;
     width: 94%;
-    height: 100%;
     padding-right: 3%;
     padding-left: 3%;
     height: 7rem;
@@ -237,7 +244,7 @@ h1 {
 
 .section2 .content {
     grid-area: content-area;
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -245,6 +252,24 @@ h1 {
 .section2 .decor {
     width: 80%;
     justify-self: flex-end;
+}
+
+@media (max-width: 600px) {
+    .section2 {
+        grid-template-areas: 
+            "title"
+            "content-area"
+            "decor";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 100%;
+        margin-bottom: 0;
+    }
+    .section2 .decor {
+        width: 100%;
+    }
+    .section2 .about-us-icon {
+        display: none;
+    }
 }
 
 /* SERVICES */
