@@ -403,6 +403,10 @@ h1 {
 	height: auto;
 }
 
+.contact-us .mobile-bg {
+    display: none;
+}
+
 .contact-us .content-container{
 	aspect-ratio: 3/2;	
 	width: min(100vw, calc(100vh * 3 / 2));
@@ -497,6 +501,12 @@ h1 {
 		height: auto;
 		content: url(../assets/ContactUsBgMobile.png);
 	}
+    .contact-us .desktop-bg {
+        display: none;
+    }
+    .contact-us .mobile-bg {
+        display: block;
+    }
 	.contact-us .content {
 		position: absolute;
 		top: 50%;
