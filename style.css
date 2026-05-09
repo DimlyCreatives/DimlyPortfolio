@@ -228,7 +228,7 @@ h1 {
     justify-content: space-between;
     background-color: #43332a;
     border-top: 1.5rem solid #251a14;
-    overflow-y: hidden;
+    overflow-y: visible;
 }
 
 .section2 h2 {
@@ -238,18 +238,28 @@ h1 {
 }
 
 .section2 .title-div img {
-    height: 80%;
+    height: 120%;
     align-self: flex-end;
+    margin-bottom: -2rem;
 }
 
 .section2 .content {
     grid-area: content-area;
-    font-size: 1.2rem;
     margin-left: 10%;
     margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.section2 .content p {
+    font-size: 1.7rem;
+    width: 100%;
 }
 
 .section2 .decor {
+    grid-area: decor;
     width: 80%;
     justify-self: flex-end;
 }
@@ -271,10 +281,10 @@ h1 {
         display: none;
     }
     .section2 h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
-    .section2 .content {
-        font-size: 1rem;
+    .section2 .content p {
+        font-size: 1.5rem;
     }
 }
 
@@ -306,19 +316,24 @@ h1 {
     width: max-content;
     height: 55vh;
     gap: 40px;
-    animation: slide-cards 60s linear infinite alternate;
+    animation: slide-cards 80s linear infinite alternate;
     overflow-y: visible;
 }
 
 .services .cards-list .card {
-    aspect-ratio: 9/16;
-    height: 50vh;
+    aspect-ratio: 1/1;
+    height: 40vh;
     width: auto;
-    background-color: #736357;
+    background-color: #000;
+    border: solid 2px #43332a;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 20px 10px black;
 }
 
 .services .card:hover {
@@ -328,15 +343,24 @@ h1 {
 .card p {
     margin: 20px;
     font-size: 1.5rem;
+    z-index: 10;
+}
+
+.card .bg {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    min-width: 100%;
+    opacity: 0.4;
 }
 
 /* Forward motion — the browser handles the backward motion automatically */
 @keyframes slide-cards {
     from {
-        transform: translateX(38.3%);
+        transform: translateX(42%);
     }
     to {
-        transform: translateX(-38.3%); /* adjust based on the width of your images */
+        transform: translateX(-42%); /* adjust based on the width of your images */
     }
 }
 
@@ -499,7 +523,6 @@ h1 {
 		aspect-ratio: 9/16;	
 		width: min(85vw, calc(100vh * 9 / 16));
 		height: auto;
-		content: url(../assets/ContactUsBgMobile.png);
 	}
     .contact-us .desktop-bg {
         display: none;
